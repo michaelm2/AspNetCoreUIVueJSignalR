@@ -1,0 +1,24 @@
+{
+  "name": "aspnetcoreuivuejs",
+  "version": "1.0.0",
+  "description": "todo",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.6",
+    "bootstrap": "4.0.0",
+    "chart.js": "^2.7.2",
+    "flag-icon-css": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "simple-line-icons": "^2.4.1",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "todo",
+  "license": "MIT",
+  "repository": "todo"
+}

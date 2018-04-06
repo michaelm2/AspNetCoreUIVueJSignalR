@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using AspNetCoreUIVueJs.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace AspNetCoreUIVueJs
 {
@@ -62,7 +64,12 @@ namespace AspNetCoreUIVueJs
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
+                RequestPath = "/node_modules"
+            });
             app.UseCookiePolicy();
 
             app.UseAuthentication();

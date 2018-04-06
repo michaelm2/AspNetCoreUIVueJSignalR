@@ -3,7 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27520.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreUIVueJs", "AspNetCoreUIVueJs\AspNetCoreUIVueJs.csproj", "{EE170521-5D17-4252-9658-9B79941C39B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreUIVueJs", "AspNetCoreUIVueJs\AspNetCoreUIVueJs.csproj", "{EE170521-5D17-4252-9658-9B79941C39B0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vue_Starter", "C:\Users\Michael\Downloads\coreui-free-vue-admin-template-master (2)\coreui-free-vue-admin-template-master\Vue_Starter\", "{0748834C-58D2-470E-9D64-4B79CE03C7B9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62341"
+		Debug.AspNetCompiler.PhysicalPath = "C:\Users\Michael\Downloads\coreui-free-vue-admin-template-master (2)\coreui-free-vue-admin-template-master\Vue_Starter\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62341\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62341"
+		Release.AspNetCompiler.PhysicalPath = "C:\Users\Michael\Downloads\coreui-free-vue-admin-template-master (2)\coreui-free-vue-admin-template-master\Vue_Starter\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62341\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62341"
+		SlnRelativePath = "C:\Users\Michael\Downloads\coreui-free-vue-admin-template-master (2)\coreui-free-vue-admin-template-master\Vue_Starter\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +36,10 @@ Global
 		{EE170521-5D17-4252-9658-9B79941C39B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE170521-5D17-4252-9658-9B79941C39B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE170521-5D17-4252-9658-9B79941C39B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0748834C-58D2-470E-9D64-4B79CE03C7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0748834C-58D2-470E-9D64-4B79CE03C7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0748834C-58D2-470E-9D64-4B79CE03C7B9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0748834C-58D2-470E-9D64-4B79CE03C7B9}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
