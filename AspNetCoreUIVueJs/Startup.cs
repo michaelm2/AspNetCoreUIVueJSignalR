@@ -47,8 +47,12 @@ namespace AspNetCoreUIVueJs
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddSignalR();
-            
+            services.AddSignalR(options =>
+            {
+                options.KeepAliveInterval = TimeSpan.FromSeconds(5);
+            })
+            .AddMessagePackProtocol();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

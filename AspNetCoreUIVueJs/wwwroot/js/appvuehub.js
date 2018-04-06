@@ -1,4 +1,10 @@
-﻿const connection = new signalR.HubConnection('/appvuehub');
+﻿
+var connection = new signalR.HubConnection('/appvuehub');//, signalR.protocols.msgpack());
+
+//const connection = new signalR.HubConnection('/appvuehub', {
+//    protocol: new signalR.protocol.msgpack.MessagePackHubProtocol()
+//});
+
 
 connection.on('ReceiveMessage', (timestamp, user, message) => {
     const encodedUser = user;
