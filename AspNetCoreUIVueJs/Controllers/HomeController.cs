@@ -5,29 +5,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AspNetCoreUIVueJs.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace AspNetCoreUIVueJs.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IHostingEnvironment _hostenv;
+        public HomeController(IHostingEnvironment hostingEnvironment)
+        {
+            _hostenv = hostingEnvironment;
+        }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult About()
+        [HttpGet]
+        public JavaScriptResult Scripts()
         {
-            ViewData["Message"] = "Your application description page.";
+            string webRootPath = _hostenv.WebRootPath;
 
-            return View();
+            string result = System.IO.File.ReadAllText(webRootPath + "/JavaScript.js");
+            result += System.IO.File.ReadAllText(webRootPath + "/JavaScript1.js");
+
+            return new JavaScriptResult(result);
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
 
         public IActionResult Privacy()
         {
@@ -38,6 +42,15 @@ namespace AspNetCoreUIVueJs.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public class JavaScriptResult : ContentResult
+        {
+            public JavaScriptResult(string script)
+            {
+                this.Content = script;
+                this.ContentType = "application/javascript";
+            }
         }
     }
 }

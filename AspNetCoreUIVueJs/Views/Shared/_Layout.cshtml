@@ -1,102 +1,16 @@
-﻿@{
-    Layout = null;
-    ViewData["Title"] = "CoreUI";
-}
+﻿@{Layout = null; }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <link rel="shortcut icon" href="~/img/favicon.png">
-    <title></title>
-    <!-- Icons -->
-    <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="~/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/css/style.css">
-
-    <script src="~/node_modules/vue/dist/vue.js"></script>
-    <script src="~/node_modules/vue-router/dist/vue-router.min.js"></script>
-    <script src="~/node_modules/axios/dist/axios.min.js"></script>
+    <title></title>    
+    <link href="~/vendors/vendor.min.css" rel="stylesheet" />
+    <script src="~/vendors/vendor.min.js"></script>
+    @RenderSection("Scripts", required: false)
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
-
-
-
     @RenderBody()
-
-
-
-    
-
-
-
-
-    <!-- Bootstrap and necessary plugins -->
-    @*
-        <script src="~/node_modules/jquery/dist/jquery.min.js"></script>*@
-    @*<script src="~/node_modules/popper.js/dist/umd/popper.min.js"></script>*@
-    @*
-        <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>*@
-    @*
-        <script src="~/node_modules/pace-progress/pace.min.js"></script>*@
-    <!-- Plugins and scripts required by all views -->
-    @*
-        <script src="~/node_modules/chart.js/dist/Chart.min.js"></script>*@
-    <!-- CoreUI main scripts -->
-    @*
-        <script src="~/js/app.js"></script>*@
-    <!-- Plugins and scripts required by this views -->
-    @*<footer-container></footer-container>*@
-
-
-
-    @RenderSection("Scripts", required: false)
-    <!-- Custom scripts required by this view -->
-    @*<script>
-
-            (function () {
-
-                const Footer = Vue.component('footer-container', {
-                    template: '#footer-template',
-                    props: ['username'],
-                    methods: { setUsername: function (username) { this.username = 'cannon' } }
-                });
-
-
-                //Vue.component("remote-vue", function (resolve, reject) {
-                //    axios.get("/home/remoteview")
-                //        .then(function (response) {
-                //            resolve(createRemoteVue(response.data));
-                //        })
-                //        .catch(function () { console.log("FAILED"); reject(); });
-                //});
-
-                console.log('vue parse menus');
-                const Foo = { template: '<div>foo</div>' }
-                const Bar = { template: '<div>bar</div>' }
-                const routes = [{ path: '/foo', component: Foo }, { path: '/bar', component: Bar }]
-                const router = new VueRouter({ routes: routes })
-                const vueapp = new Vue({ router, Footer }).$mount('#vueapp');
-            })();
-
-            function createRemoteVue(template) {
-                return {
-                    template: template,
-                    data: function () {
-                        return {
-                            foo: "Hello",
-                            items: [{ name: "Shawn", age: 48 }, { name: "Steve", age: 33 }]
-                        };
-                    },
-                    methods: {
-                        onSave: function (item) { alert(item.name); }
-                    }
-                }
-            }
-
-
-        </script>*@
 </body>
 </html>
