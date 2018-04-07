@@ -5,6 +5,52 @@
     <UserSecretsId>aspnet-AspNetCoreUIVueJs-1B733DE6-CFBB-49DF-9FB0-82F761CBC8C9</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="Styles\core\core.scss" />
+    <Content Include="Styles\core\utilities\_background.scss" />
+    <Content Include="Styles\core\utilities\_borders.scss" />
+    <Content Include="Styles\core\utilities\_display.scss" />
+    <Content Include="Styles\core\_animate.scss" />
+    <Content Include="Styles\core\_aside.scss" />
+    <Content Include="Styles\core\_avatars.scss" />
+    <Content Include="Styles\core\_badge.scss" />
+    <Content Include="Styles\core\_breadcrumb-menu.scss" />
+    <Content Include="Styles\core\_breadcrumb.scss" />
+    <Content Include="Styles\core\_buttons.scss" />
+    <Content Include="Styles\core\_callout.scss" />
+    <Content Include="Styles\core\_card.scss" />
+    <Content Include="Styles\core\_charts.scss" />
+    <Content Include="Styles\core\_dropdown-menu-right.scss" />
+    <Content Include="Styles\core\_dropdown.scss" />
+    <Content Include="Styles\core\_footer.scss" />
+    <Content Include="Styles\core\_grid.scss" />
+    <Content Include="Styles\core\_input-group.scss" />
+    <Content Include="Styles\core\_layout.scss" />
+    <Content Include="Styles\core\_loading.scss" />
+    <Content Include="Styles\core\_mixins.scss" />
+    <Content Include="Styles\core\_mobile.scss" />
+    <Content Include="Styles\core\_modal.scss" />
+    <Content Include="Styles\core\_nav.scss" />
+    <Content Include="Styles\core\_navbar.scss" />
+    <Content Include="Styles\core\_others.scss" />
+    <Content Include="Styles\core\_progress.scss" />
+    <Content Include="Styles\core\_rtl.scss" />
+    <Content Include="Styles\core\_sidebar.scss" />
+    <Content Include="Styles\core\_switches.scss" />
+    <Content Include="Styles\core\_tables.scss" />
+    <Content Include="Styles\core\_temp.scss" />
+    <Content Include="Styles\core\_typography.scss" />
+    <Content Include="Styles\core\_utilities.scss" />
+    <Content Include="Styles\core\_variables.scss" />
+    <Content Include="Styles\core\_widgets.scss" />
+    <Content Include="Styles\style.scss" />
+    <Content Include="Styles\vendors\chart.js\chart.scss" />
+    <Content Include="Styles\vendors\_variables.scss" />
+    <Content Include="Styles\_bootstrap-variables.scss" />
+    <Content Include="Styles\_core-variables.scss" />
+    <Content Include="Styles\_custom.scss" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.6.362" />

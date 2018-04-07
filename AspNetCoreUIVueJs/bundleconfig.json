@@ -5,7 +5,7 @@
     "outputFileName": "wwwroot/vendors/vendor.min.css",
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
-      "wwwroot/vendors/bootstrap-vue.css",
+      "wwwroot/vendors/bootstrap-vue.min.css",
       "wwwroot/vendors/font-awesome.css",
       "wwwroot/vendors/simple-line-icons.css"
     ]
@@ -21,6 +21,7 @@
     "outputFileName": "wwwroot/vendors/vendor.min.js",
     "inputFiles": [
       "wwwroot/vendors/axios.js",
+      "wwwroot/vendors/bootstrap-vue.min.js",
       "wwwroot/vendors/vue.js",
       "wwwroot/vendors/vue-router.js",
       "wwwroot/vendors/vue-x.js"
